@@ -3,39 +3,26 @@ import { NavLink, Link } from 'react-router-dom';
 
 const NavMenu = () => (
   <div className="main-nav">
-    <div className="navbar navbar-inverse">
-      <div className="navbar-header">
-        <button
-          type="button"
-          className="navbar-toggle"
-          data-toggle="collapse"
-          data-target=".navbar-collapse"
-        >
-          <span className="sr-only">Toggle navigation</span>
-          <span className="icon-bar" />
-          <span className="icon-bar" />
-          <span className="icon-bar" />
-        </button>
-        <Link className="navbar-brand" to="/">
-          Batch Payments Utility
-        </Link>
-      </div>
+    <div className="navbar navbar-dark d-block">
+      <Link className="navbar-brand" to="/">
+        Batch Payments Utility
+      </Link>
       <div className="clearfix" />
-      <div className="navbar-collapse collapse">
-        <ul className="nav navbar-nav">
-          <li>
+      <div className="navbar-collapse mt-2">
+        <ul className="navbar-nav">
+          <li className="nav-item active">
             <NavLink exact to="/" activeClassName="active">
-              <span className="glyphicon glyphicon-home" /> Home
+              <span className="oi oi-home" /> Home
             </NavLink>
           </li>
-          <li>
+          <li className="nav-item">
             <NavLink to="/batch" activeClassName="active">
-              <span className="glyphicon glyphicon-th-list" /> Payments Batch
+              <span className="oi oi-box" /> Payments Batch
             </NavLink>
           </li>
-          <li>
+          <li className="nav-item">
             <NavLink to="/environments" activeClassName="active">
-              <span className="glyphicon glyphicon-education" /> Environments
+              <span className="oi oi-wrench" /> Environments
             </NavLink>
           </li>
         </ul>

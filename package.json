@@ -52,19 +52,21 @@
     "@babel/plugin-transform-react-inline-elements": "7.9.0",
     "babel-plugin-transform-react-pure-class-to-function": "1.0.1",
     "babel-plugin-transform-react-remove-prop-types": "0.4.24",
+    "bootstrap": "^4.3.1",
     "core-js": "3.6.4",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.14.3",
     "lodash": "4.17.15",
     "moment": "^2.18.1",
     "prop-types": "15.7.2",
-    "react": "16.13.0",
-    "react-dom": "16.13.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
     "react-hot-loader": "4.12.19",
     "react-redux": "^5.0.5",
-    "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
-    "redux-thunk": "^2.2.0",
-    "jquery": "^3.4.1",
-    "bootstrap": "^4.3.1"
+    "redux-thunk": "^2.2.0"
   },
   "resolutions": {
     "babel-core": "7.0.0-bridge.0"

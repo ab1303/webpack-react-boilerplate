@@ -17,6 +17,7 @@
     left: 0;
     right: 0;
     z-index: 1;
+    background-color: #222;
 }
 
 @media (max-width: 767px) {
@@ -55,6 +56,11 @@
     .main-nav .navbar li a {
         padding: 10px 16px;
         border-radius: 4px;
+        display: block;
+        color:#9d9d9d;
+    }
+    .main-nav .navbar li a.active {
+        color:white;
     }
     .main-nav .navbar a {
         /* If a menu item's text is too long, truncate it */

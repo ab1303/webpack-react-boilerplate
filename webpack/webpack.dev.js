@@ -21,7 +21,8 @@ module.exports = {
               sourceMap: true,
               localsConvention: 'camelCase',
               modules: {
-                localIdentName: '[local]___[hash:base64:5]',
+                // localIdentName: '[local]___[hash:base64:5]',
+                localIdentName: '[local]',
               },
             },
           },

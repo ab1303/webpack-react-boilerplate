@@ -7,10 +7,10 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import Moment from 'moment';
-// import { BrowserRouter as Router } from 'react-router-dom';
-
-// import Routes from './components/Routes';
-import App from './App.jsx';
+import { browserHistory } from 'react-router';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Routes from './components/Routes';
+// import App from './App.jsx';
 import reducers from './reducers';
 
 // Set Locale
@@ -32,7 +32,9 @@ function renderApp() {
   const spaStore = createStore(reducers, initialState, enhancer);
   ReactDOM.render(
     <Provider store={spaStore}>
-      <App />
+      <Router history={browserHistory}>
+        <Routes />
+      </Router>
     </Provider>,
     document.getElementById('app'),
   );
